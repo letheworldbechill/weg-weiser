@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang='de'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Klarheitsritual</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Klarheitskompass</title>
+
+  <link rel='stylesheet' href='style.css'>
+  <link rel='manifest' href='manifest.webmanifest'>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
 </head>
 <body>
 
-<div id="container">
-  <h1>30-Sekunden Klarheit</h1>
+<nav>
+  <button data-page='ritual'>Ritual</button>
+  <button data-page='kompass'>Kompass</button>
+  <button data-page='abend'>Abend-Check</button>
+</nav>
 
-  <div id="step">Bereit?</div>
+<div id='content'></div>
 
-  <button id="startBtn">Start</button>
-</div>
-
-<script src="app.js"></script>
+<script src='app.js'></script>
 </body>
 </html>
