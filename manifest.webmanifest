@@ -1,8 +1,8 @@
 {
-  "name": "Klarheitsritual",
-  "short_name": "Klarheit",
-  "start_url": "./index.html",
+  "name": "Klarheitskompass",
+  "short_name": "Kompass",
   "display": "standalone",
+  "start_url": "./index.html",
   "background_color": "#0b1a33",
   "theme_color": "#0b1a33",
   "icons": [
